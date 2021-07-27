@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 14px; /* размер шрифта */
+    color: #0A143A; /* цвет текста */
+    margin: 0;
+}
+.header {
+    padding-top: 30px;
+    max-width: 1146px; /* максимальная ширина */
+    margin: auto; /* Автоматическое выравниание по середине */
+}
+.navbar {
+    display: flex; /* Делаем гибкий блок */
+    align-items: center; /* Выравниваем по вертикали по центру */
+    justify-content: space-between; /* Разбросать элементы по краям */
+    margin-bottom: 24px;
+}
+.navbar-menu {
+    margin-right: auto; /* автоматический отступ справа*/
+}
+.menu {
+    list-style: none;  /* Отключаем точки в списке */
+    margin: 0; /* Обнуляем отступы */
+    padding-left: 22px; /* Внутренний отступ слева */
+    padding-right: 22px; /* Внутренний отступ справа */
+    display: flex;
+}
+/* Для всех пунктов меню кроме последнего */
+.menu-item:not(:last-child) {
+    margin-right: 14px; /* отступ справа */
+}
+.menu-link {
+    text-decoration: none; /* отключаем подчеркивание ссылок */
+    color: inherit; /* возьми цвет текста как у родителя (body)*/
+}
+.button {
+    text-decoration: none; /* отключаем подчеркивание ссылок */ 
+    display: inline-block;
+    padding: 10px 15px; /* внутренний отступ сверху и снизу по 10pх, а по краям по 15px*/
+    
+}
+.button-link {
+    color: inherit;
+}
+.button-primary {
+    border-radius: 5px;  /* скругление углов */
+    background: #256eeb; /* фон */
+    color: #fff;   
+}
+.search-panel {
+    height: 50px;
+    border: radius 5px;
+    background: #256eeb;
+    padding: 3px;
+    display: flex;
+}
+.search-input {
+    flex-grow: 1; /* растягивается на всё свободное место*/
+    background: #fff;
+    border-radius: 5px;
+    border: none; /* отключаем обводку */
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.search-button {
+    background: #256eeb;
+    border: none; /* отключаем обводку */
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 17px;
+    display: flex;
+    align-items: center;
+}
+.search-button-text {
+    margin-left: 5px;
+}
